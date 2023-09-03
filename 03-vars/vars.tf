@@ -69,7 +69,7 @@ variable "course_details" {
     AWS = {
       name = "AWS"
       timing = "11am"
-      duration = "30"  
+      duration = 30  
     }
   }  
 }
