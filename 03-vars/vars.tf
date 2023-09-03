@@ -62,16 +62,16 @@ variable "courses" {
 variable "course_details" {
   default = {
     DevOps = {
-      name = "DevOps"
-      timing = "10am"
-      duration = 90  
-    }  
-    AWS = {
-      name = "AWS"
-      timing = "11am"
-      duration = 30  
+      name     = "DevOps"
+      timing   = "10am"
+      duration = 90
     }
-  }  
+    AWS = {
+      name     = "AWS"
+      timing   = "11am"
+      duration = 30
+    }
+  }
 }
 
 
