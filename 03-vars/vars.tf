@@ -51,8 +51,8 @@ variable "course" {
 # List
 variable "courses" {
   default = [
-    "DevOps"
-    "AWS"
+    "DevOps" ,
+    "AWS" ,
     "python"  
   ]  
 }
@@ -74,17 +74,25 @@ variable "course_details" {
   }
 }
 
-
-## output access
-
 output "course" {
-  value = var.course  
+  value = var.course
 }
 
 output "courses" {
-  value = var.courses  
+  value = var.courses[2]
 }
 
 output "course_details" {
-  value = var.course_details  
+  value = var.course_details["DevOps"]
+}
+
+variable "env" {}
+
+output "env" {
+  value = var.env
+}
+
+variable "url" {}
+output "url" {
+  value = var.url
 }
