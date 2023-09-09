@@ -28,22 +28,13 @@ output "sample-ext" {
 
 # variables types 
 # IN Ansible:- 1. plain key, value 2. list 3. map/dict
-# list:- - apple
- #        - orange
-  #       - grape
-   #      - banana
-
-# map/dict:- - { name: apple,quantity: 100}
-    #         - { name: orange,quantity: 200}   
-     ##       - { name: banana,quantity: 500}
-            # - - { name: grape,quantity: 500}
 
 # IN Terraform 
 # 1. plain
 # 2. list
 # 3. map
 
-# plain
+## plain
 variable "course" {
   default = "DevOps Training"  
 }
@@ -58,17 +49,17 @@ variable "courses" {
 }
 
 
-# Map 
+## Map 
 variable "course_details" {
   default = {
     DevOps = {
-      name     = "DevOps"
-      timing   = "10am"
+      name = "DevOps"
+      timing = "10am"
       duration = 90
     }
     AWS = {
-      name     = "AWS"
-      timing   = "11am"
+      name = "AWS"
+      timing = "11am"
       duration = 30
     }
   }
@@ -86,13 +77,3 @@ output "course_details" {
   value = var.course_details["DevOps"]
 }
 
-variable "env" {}
-
-output "env" {
-  value = var.env
-}
-
-variable "url" {}
-output "url" {
-  value = var.url
-}
