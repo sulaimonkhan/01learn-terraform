@@ -21,13 +21,13 @@ output "sample-ext" {
   value = "value of sample & sample1 - ${var.sample} - ${var.sample1}"    
 }
 
-# variable data types terraform supportes
+# variable data types 
 # 1. string
 # 2. number
-# 3. boolean
+# 3. Boolean
 
 # variables types 
-# IN Ansible:- 1. plain key, value 2. list 3. map/dict
+# IN Ansible - 1. plain key, value 2. list 3. map/dict
 
 # IN Terraform 
 # 1. plain
@@ -42,8 +42,8 @@ variable "course" {
 # List
 variable "courses" {
   default = [
-    "DevOps" ,
-    "AWS" ,
+    "DevOps",
+    "AWS",
     "python"  
   ]  
 }
